@@ -116,7 +116,7 @@ function App() {
                 </ul>
               </div>
             )}
-            {userInfo && userInfo.isAdmin && (
+            {/* {userInfo && userInfo.isAdmin && (
               <div className="dropdown">
                 <Link to="#admin">
                   Admin <i className="fa fa-caret-down"></i>
@@ -139,7 +139,7 @@ function App() {
                   </li>
                 </ul>
               </div>
-            )}
+            )} */}
           </div>
         </header>
         <aside className={sidebarIsOpen ? 'open' : ''}>
@@ -314,7 +314,7 @@ function App() {
           </Routes>
         </main>
         <footer className="row center">
-          {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />}
+          {/* {userInfo && !userInfo.isAdmin && <ChatBox userInfo={userInfo} />} */}
           <div>All right reserved</div>{' '}
         </footer>
       </div>
