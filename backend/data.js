@@ -17,6 +17,20 @@ const data = {
       },
     },
     {
+      name: 'Lance',
+      email: 'wo@wo.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true,
+      isSeller: true,
+      seller: {
+        name: 'Nike',
+        logo: '/images/logo1.png',
+        description: 'best seller',
+        rating: 4.5,
+        numReviews: 120,
+      },
+    },
+    {
       name: 'John',
       email: 'user@example.com',
       password: bcrypt.hashSync('1234', 8),
@@ -90,6 +104,18 @@ const data = {
       numReviews: 15,
       description: 'high quality product',
     },
+    {
+      name: 'Palm Angles Bear hats',
+      category: 'Hats',
+      image: '/images/p1.jpg',
+      price: 139,
+      countInStock: 12,
+      brand: 'Adidas',
+      rating: 4.5,
+      numReviews: 15,
+      description: 'high quality product',
+    },
+
   ],
 };
 export default data;

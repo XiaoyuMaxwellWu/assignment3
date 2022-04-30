@@ -27,8 +27,10 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #203040;
+  background-color: orangered;
 }
+
+
 main {
   grid-area: main;
   padding: 1rem;
