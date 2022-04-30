@@ -29,7 +29,6 @@ import { listProductCategories } from './actions/productActions';
 import LoadingBox from './components/LoadingBox';
 import MessageBox from './components/MessageBox';
 import MapScreen from './screens/MapScreen';
-import DashboardScreen from './screens/DashboardScreen';
 import SupportScreen from './screens/SupportScreen';
 import ChatBox from './components/ChatBox';
 
@@ -274,14 +273,6 @@ function App() {
               element={
                 <AdminRoute>
                   <UserEditScreen />
-                </AdminRoute>
-              }
-            />
-            <Route
-              path="/dashboard"
-              element={
-                <AdminRoute>
-                  <DashboardScreen />
                 </AdminRoute>
               }
             />
