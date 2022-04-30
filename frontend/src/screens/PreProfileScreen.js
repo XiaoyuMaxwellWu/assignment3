@@ -12,7 +12,7 @@ export default function PreProfileScreen() {
   const { userInfo } = userSignin;
   return (
     <div>
-      Your account
+      <h3 id="YA">Your account</h3>
       <table>
         <tr>
           <th>
