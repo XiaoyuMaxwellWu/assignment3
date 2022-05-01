@@ -68,18 +68,23 @@ export default function ProductEditScreen(props) {
 
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
+  const WEB_URL = process.env.REACT_APP_WEB_URL;
   const uploadFileHandler = async (e) => {
     const file = e.target.files[0];
     const bodyFormData = new FormData();
     bodyFormData.append('image', file);
     setLoadingUpload(true);
     try {
-      const { data } = await Axios.post('/api/uploads', bodyFormData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-          Authorization: `Bearer ${userInfo.token}`,
-        },
-      });
+      const { data } = await Axios.post(
+        WEB_URL + '/api/uploads',
+        bodyFormData,
+        {
+          headers: {
+            'Content-Type': 'multipart/form-data',
+            Authorization: `Bearer ${userInfo.token}`,
+          },
+        }
+      );
       setImage(data);
       setLoadingUpload(false);
     } catch (error) {
