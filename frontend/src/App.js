@@ -72,17 +72,13 @@ function App() {
             <SearchBox />
           </div>
 
-          <div class="search bar3">
+          {/* <div class="search bar3">
             <form>
               <input type="text" placeholder="请输入您要搜索的内容..."/>
                 <button type="submit"></button>
 
             </form>
-          </div>
-
-
-
-
+          </div> */}
 
           <div>
             <Link to="/cart">
@@ -327,18 +323,18 @@ function App() {
 }
 
 function change_icon() {
-  const changeFavicon = link => {
+  const changeFavicon = (link) => {
     let $favicon = document.querySelector('link[rel="icon"]');
     if ($favicon !== null) {
       $favicon.href = link;
     } else {
-      $favicon = document.createElement("link");
-      $favicon.rel = "icon";
+      $favicon = document.createElement('link');
+      $favicon.rel = 'icon';
       $favicon.href = link;
       document.head.appendChild($favicon);
     }
   };
-  let iconUrl = `./frontend/public/logo.ico`
+  let iconUrl = `./frontend/public/logo.ico`;
   changeFavicon(iconUrl);
 }
 

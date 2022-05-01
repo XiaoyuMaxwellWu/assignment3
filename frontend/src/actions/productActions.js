@@ -54,8 +54,6 @@ export const listProductCategories = () => async (dispatch) => {
     type: PRODUCT_CATEGORY_LIST_REQUEST,
   });
   try {
-    console.log('kkk' + process.env.WEB);
-
     const { data } = await Axios.get(WEB_URL + `/api/products/categories`);
     dispatch({ type: PRODUCT_CATEGORY_LIST_SUCCESS, payload: data });
   } catch (error) {
