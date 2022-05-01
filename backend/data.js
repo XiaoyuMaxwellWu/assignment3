@@ -162,7 +162,7 @@ const data = {
     {
       name: 'Puma Classics oversized hoodie in off white',
       category: 'Shirts',
-      image: '/images/puma_shirt.jpg',
+      image: '/images/puma_shirt.png',
       price: 67,
       countInStock: 10,
       brand: 'Puma',
@@ -173,7 +173,7 @@ const data = {
     {
       name: 'Adidas Originals adicolor 3 stripe sweat in mauve',
       category: 'Shirts',
-      image: '/images/adidas_shirt.jpg',
+      image: '/images/adidas_shirt.png',
       price: 87,
       countInStock: 20,
       brand: 'Adidas',
@@ -184,7 +184,7 @@ const data = {
     {
       name: 'Nike pull over fleece hoodie in pale coral',
       category: 'Shirts',
-      image: '/images/nike_shirt.jpg',
+      image: '/images/nike_shirt.png',
       price: 106,
       countInStock: 0,
       brand: 'Nike',
@@ -195,7 +195,7 @@ const data = {
     {
       name: 'Puma Classics oversized sweatpants in brown',
       category: 'Pants',
-      image: '/images/puma_pant.jpg',
+      image: '/images/puma_pant.png',
       price: 60,
       countInStock: 15,
       brand: 'Puma',
@@ -206,7 +206,7 @@ const data = {
     {
       name: 'Adidas Training Earth Shades fleece tracksuit in brown',
       category: 'Pants',
-      image: '/images/adidas_pant.jpg',
+      image: '/images/adidas_pant.png',
       price: 87,
       countInStock: 5,
       brand: 'Adidas',
@@ -217,7 +217,7 @@ const data = {
     {
       name: 'Nike Club Sweatpants In Black',
       category: 'Pants',
-      image: '/images/nike_pant.jpg',
+      image: '/images/nike_pant.png',
       price: 88,
       countInStock: 12,
       brand: 'Nike',
@@ -225,8 +225,6 @@ const data = {
       numReviews: 15,
       description: 'high quality product',
     },
-
-
   ],
 };
 export default data;
