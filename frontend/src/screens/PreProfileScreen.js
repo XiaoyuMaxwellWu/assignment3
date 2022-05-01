@@ -16,7 +16,7 @@ export default function PreProfileScreen() {
               <div className="card card-bodyPre">
                 <img
                   className="small"
-                  src="/images/user-profile.png"
+                  src="/images/user-profile.jpg"
                   alt="user profile"
                 ></img>
                 <div>
@@ -33,7 +33,7 @@ export default function PreProfileScreen() {
               <div className="card card-bodyPre">
                 <img
                   className="small"
-                  src="/images/order-history.png"
+                  src="/images/order-history.jpg"
                   alt="history orders"
                 ></img>
                 <div>
@@ -53,7 +53,7 @@ export default function PreProfileScreen() {
                 <div className="card card-bodyPre">
                   <img
                     className="small"
-                    src="/images/seller-products.jpeg"
+                    src="/images/seller-products.jpg"
                     alt="seller products"
                   ></img>
                   <div>
@@ -72,11 +72,11 @@ export default function PreProfileScreen() {
                 <div className="card card-bodyPre">
                   <img
                     className="small"
-                    src="/images/seller-orders.jpeg"
+                    src="/images/sell-order.jpg"
                     alt="seller orders"
                   ></img>
                   <div>
-                    Your orders
+                    Order
                     <br />
                     <br />
                     View the orders for your products
