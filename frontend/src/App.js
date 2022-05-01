@@ -65,18 +65,9 @@ function App() {
               Indiana Jeans
             </Link>
           </div>
-          <div>
+          <div class="search bar3">
             <SearchBox />
           </div>
-
-          {/*<div class="search bar3">*/}
-          {/*  <form>*/}
-          {/*    <input type="text" placeholder="请输入您要搜索的内容..."/>*/}
-          {/*      <button type="submit"></button>*/}
-
-          {/*  </form>*/}
-          {/*</div>*/}
-
           <div>
             <Link to="/cart">
               Cart
