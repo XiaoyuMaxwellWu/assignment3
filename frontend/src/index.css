@@ -35,6 +35,33 @@ header {
 }
 
 
+.bar3 {
+  background: #F9F0DA;
+}
+.bar3 form {
+  background: #A3D0C3;
+}
+.bar3 input, .bar3 button {
+  background: transparent;
+}
+.bar3 button {
+  top: 0;
+  right: 0;
+}
+.bar3 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
 main {
   grid-area: main;
   padding: 1rem;
