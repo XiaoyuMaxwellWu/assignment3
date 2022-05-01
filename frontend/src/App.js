@@ -28,9 +28,6 @@ import SearchScreen from './screens/SearchScreen';
 import { listProductCategories } from './actions/productActions';
 import LoadingBox from './components/LoadingBox';
 import MessageBox from './components/MessageBox';
-import MapScreen from './screens/MapScreen';
-import SupportScreen from './screens/SupportScreen';
-import ChatBox from './components/ChatBox';
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -72,13 +69,13 @@ function App() {
             <SearchBox />
           </div>
 
-          <div class="search bar3">
-            <form>
-              <input type="text" placeholder="请输入您要搜索的内容..."/>
-                <button type="submit"></button>
+          {/*<div class="search bar3">*/}
+          {/*  <form>*/}
+          {/*    <input type="text" placeholder="请输入您要搜索的内容..."/>*/}
+          {/*      <button type="submit"></button>*/}
 
-            </form>
-          </div>
+          {/*  </form>*/}
+          {/*</div>*/}
 
 
 
@@ -146,9 +143,6 @@ function App() {
                   <li>
                     <Link to="/userlist">Users</Link>
                   </li>
-                  {/* <li>
-                    <Link to="/support">Support</Link>
-                  </li> */}
                 </ul>
               </div>
             )}
@@ -239,14 +233,6 @@ function App() {
               path="/preprofile"
               element={<PrivateRoute>{<PreProfileScreen />}</PrivateRoute>}
             />
-            <Route
-              path="/map"
-              element={
-                <PrivateRoute>
-                  <MapScreen />
-                </PrivateRoute>
-              }
-            />
 
             <Route
               path="/productlist"
@@ -289,14 +275,7 @@ function App() {
                 </AdminRoute>
               }
             />
-            <Route
-              path="/support"
-              element={
-                <AdminRoute>
-                  <SupportScreen />
-                </AdminRoute>
-              }
-            />
+
             <Route
               path="/productlist/seller"
               element={
