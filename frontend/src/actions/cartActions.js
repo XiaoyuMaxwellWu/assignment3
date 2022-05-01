@@ -6,9 +6,9 @@ import {
   CART_SAVE_PAYMENT_METHOD,
   CART_ADD_ITEM_FAIL,
 } from '../constants/cartConstants';
-
+import { WEB_URL } from './productActions';
 export const addToCart = (productId, qty) => async (dispatch, getState) => {
-  const { data } = await Axios.get(`/api/products/${productId}`);
+  const { data } = await Axios.get(WEB_URL + `/api/products/${productId}`);
   const {
     cart: { cartItems },
   } = getState();
