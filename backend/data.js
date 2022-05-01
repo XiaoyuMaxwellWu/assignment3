@@ -38,7 +38,6 @@ const data = {
     },
   ],
   products: [
-   
     {
       name: 'Adidas Dame',
       category: 'Shoes',
@@ -93,7 +92,7 @@ const data = {
       rating: 4.9,
       numReviews: 21,
       description: 'high quality product',
-    }
+    },
     {
       name: 'Puma Classics oversized hoodie in off white',
       category: 'Shirts',
