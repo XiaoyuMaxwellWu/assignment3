@@ -22,7 +22,7 @@ import {
   PRODUCT_REVIEW_CREATE_SUCCESS,
   PRODUCT_REVIEW_CREATE_FAIL,
 } from '../constants/productConstants';
-export const WEB_URL = 'https://protean-silicon-348806.ue.r.appspot.com';
+export const WEB_URL = process.env.REACT_APP_WEB_URL;
 export const listProducts =
   ({
     pageNumber = '',
@@ -54,6 +54,8 @@ export const listProductCategories = () => async (dispatch) => {
     type: PRODUCT_CATEGORY_LIST_REQUEST,
   });
   try {
+    console.log('kkk' + process.env.WEB);
+
     const { data } = await Axios.get(WEB_URL + `/api/products/categories`);
     dispatch({ type: PRODUCT_CATEGORY_LIST_SUCCESS, payload: data });
   } catch (error) {

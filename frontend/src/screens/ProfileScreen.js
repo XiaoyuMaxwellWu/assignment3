@@ -4,7 +4,8 @@ import { detailsUser, updateUserProfile } from '../actions/userActions';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants';
-
+import dotenv from 'dotenv';
+dotenv.config();
 export default function ProfileScreen() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
