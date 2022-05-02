@@ -80,7 +80,6 @@ export default function ProductEditScreen(props) {
         {
           headers: {
             'Content-Type': 'multipart/form-data',
-            Authorization: `Bearer ${userInfo.token}`,
           },
         }
       );
